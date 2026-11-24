@@ -458,3 +458,10 @@ time{font-size:13.5px;color:var(--muted);letter-spacing:.02em}
 .pillars:has(li:nth-child(4)){grid-template-columns:repeat(2,minmax(0,1fr))}
 @media (max-width:700px){.pillars:has(li:nth-child(4)){grid-template-columns:minmax(0,1fr)}}
 .pd-hl li{background:#fff;border:1px solid #D6DDF3;color:var(--navy)}
+
+/* phone polish */
+@media (max-width:600px){
+  #hero-title{font-size:clamp(28px,9.4vw,42px)}
+  #hero-title .ln{white-space:nowrap}
+  .hero .sticker{display:none}
+}
