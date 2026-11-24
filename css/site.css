@@ -465,3 +465,6 @@ time{font-size:13.5px;color:var(--muted);letter-spacing:.02em}
   #hero-title .ln{white-space:nowrap}
   .hero .sticker{display:none}
 }
+
+/* stamp label for headings that sit on stripes */
+.label-stamp{display:inline-block;padding:6px 32px 12px;margin-bottom:28px}
