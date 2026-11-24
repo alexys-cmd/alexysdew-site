@@ -5,6 +5,7 @@ on:
   workflow_dispatch:         # lets you run it by hand from the Actions tab
 permissions:
   contents: write
+  pages: write
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -21,4 +22,7 @@ jobs:
             git config user.email "blog-sync@users.noreply.github.com"
             git commit -am "Add new Medium posts"
             git push
+            gh api -X POST "repos/${{ github.repository }}/pages/builds"   # republish the site
           fi
+        env:
+          GH_TOKEN: ${{ github.token }}
