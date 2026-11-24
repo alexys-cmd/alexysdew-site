@@ -467,4 +467,5 @@ time{font-size:13.5px;color:var(--muted);letter-spacing:.02em}
 }
 
 /* stamp label for headings that sit on stripes */
-.label-stamp{display:inline-block;padding:6px 32px 12px;margin-bottom:28px}
+.label-stamp{display:inline-block;padding:14px 40px 20px;margin-bottom:28px}
+.label-stamp::after{content:"";position:absolute;inset:8px;border:1.5px dashed var(--peri);border-radius:4px;pointer-events:none}
