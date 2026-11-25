@@ -46,7 +46,8 @@
     var rects=textRects(), pad=6;
     stickers.forEach(function(s){
       if(getComputedStyle(s).display==='none') return;
-      var a=s.getBoundingClientRect();
+      var r=s.getBoundingClientRect(), side=Math.min(r.width,r.height), cx=r.left+r.width/2, cy=r.top+r.height/2;
+      var a={left:cx-side/2,right:cx+side/2,top:cy-side/2,bottom:cy+side/2}; /* the visible icon is centred in its box */
       var hit=rects.some(function(t){return a.left<t.right+pad&&a.right>t.left-pad&&a.top<t.bottom+pad&&a.bottom>t.top-pad;});
       if(hit) s.style.visibility='hidden';
     });
