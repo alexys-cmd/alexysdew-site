@@ -77,7 +77,7 @@ window.PROJECTS = [
         ] }
     ] },
   { id:"academic", title:"University of Florida Projects", subtitle:"Campaign planning and brand strategy for Animal HealthCare Center",
-    categories:["Academic Work"], agency:false, cover:"images/work/cap-cover.webp",
+    categories:["Academic Work"], agency:false, cover:"images/work/uf-cover.webp",
     platforms:["Instagram","Facebook"], images:[], link:"",
     sections:[
       { title:"Sit, Stay, Be Healthy", label:"Social Media Capstone · Fall 2025", agency:false,
