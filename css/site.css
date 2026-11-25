@@ -251,7 +251,7 @@ h2.center{margin-bottom:28px}
 .email:hover{border-color:var(--navy)}
 .contact-card .ctas{justify-content:center}
 .copied{min-height:1.4em;margin:12px 0 0!important;font-size:14px;color:var(--peri)!important}
-.note-line{font-size:15px;color:var(--muted)!important;margin:6px 0 0!important}
+.note-line{font-size:15px;color:var(--muted)!important;margin:6px auto 0!important;text-align:center}
 .links{list-style:none;margin:0 auto;padding:0;max-width:960px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px}
 .links a{display:flex;flex-direction:column;align-items:center;text-align:center;gap:6px;height:100%;padding:26px 16px;background:var(--paper);border:1px solid rgba(27,47,92,.08);border-radius:22px;text-decoration:none;box-shadow:0 12px 26px -22px rgba(27,47,92,.5);transition:transform .3s var(--ease),box-shadow .3s}
 .links a:hover{transform:translateY(-5px) rotate(-.5deg);box-shadow:0 20px 32px -22px rgba(27,47,92,.55)}
@@ -483,3 +483,7 @@ time{font-size:13.5px;color:var(--muted);letter-spacing:.02em}
 .mk-row:has(.mk-doc-wide){grid-template-columns:minmax(0,760px)}
 .mk-doc-wide .mk-track img{aspect-ratio:16/9;object-fit:contain;background:#fff}
 .pd-sec-link{margin-top:14px}
+
+/* keep header stickers off the words at in-between widths */
+@media (max-width:1120px){.hero:not(:has(#hero-title)) .sticker{display:none}}
+@media (max-width:680px){.hero .sticker{display:none}}
