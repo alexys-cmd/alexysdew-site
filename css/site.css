@@ -482,3 +482,4 @@ time{font-size:13.5px;color:var(--muted);letter-spacing:.02em}
 .mk-doc.mk-doc-wide{max-width:760px}
 .mk-row:has(.mk-doc-wide){grid-template-columns:minmax(0,760px)}
 .mk-doc-wide .mk-track img{aspect-ratio:16/9;object-fit:contain;background:#fff}
+.pd-sec-link{margin-top:14px}
