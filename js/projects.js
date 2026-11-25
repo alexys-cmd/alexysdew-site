@@ -25,7 +25,7 @@ window.PROJECTS = [
       { type:"carousel", brand:"vagabondapparelboutique", avatar:"V", caption:"easy, colorful, and so good 🌺\n\ntap the product tags to shop now!\n\n📍palm beach gardens", slides:["images/work/vag-color-1.webp","images/work/vag-color-2.webp","images/work/vag-color-3.webp","images/work/vag-color-4.webp"] }
     ] },
   { id:"hospitality", cover:"images/work/olis-cover.webp", title:"Hospitality Collection", subtitle:"Pig Beach · Jetty's · U-Tiki · Fashion Cuisine Group",
-    categories:["Social Media & Content"], agency:true,
+    categories:["Social Media & Content","Video & Multimedia"], agency:true,
     role:"Created and scheduled social media posts for multiple hospitality brands, adapting captions and storytelling to each restaurant's individual voice. Selected and organized photos and videos, collaborated with editors on visual content, and supported regular publishing and Stories. Also contributed original creative concepts and select trend-based content.",
     platforms:["Instagram","Facebook"], images:[], link:"",
     posts:[
