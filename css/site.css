@@ -469,3 +469,9 @@ time{font-size:13.5px;color:var(--muted);letter-spacing:.02em}
 /* stamp label for headings that sit on stripes */
 .label-stamp{display:inline-block;padding:14px 40px 20px;margin-bottom:28px}
 .label-stamp::after{content:"";position:absolute;inset:8px;border:1.5px dashed var(--peri);border-radius:4px;pointer-events:none}
+
+/* glimpse strip: stack before the pills get squeezed */
+@media (max-width:1180px){
+  .g-box{flex-direction:column;border-radius:26px;padding:20px}
+  .g-list{justify-content:center;flex-wrap:wrap}
+}

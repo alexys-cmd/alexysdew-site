@@ -78,7 +78,7 @@ window.PROJECTS = [
     ] },
   { id:"capstone", title:"Sit, Stay, Be Healthy", subtitle:"University of Florida Social Media Capstone · Fall 2025",
     categories:["Academic Work"], agency:false, cover:"images/work/cap-cover.webp",
-    role:"Wrote a 26-page proposal for a three-month social media campaign for Animal HealthCare Center, a veterinary clinic in Wellington, Florida, as my University of Florida capstone.",
+    roleLabel:"The project", role:"A 26-page proposal for a three-month social media campaign for Animal HealthCare Center, a veterinary clinic in Wellington, Florida. I researched, planned, and wrote it for my University of Florida capstone.",
     highlights:["Situational analysis","SWOT analysis","Audience personas","Competitor research","Goals and measurable objectives","Strategies and tactics","Example content","Proposed campaign timeline","Budget","Evaluation methods"],
     platforms:["Instagram","Facebook"], images:[], link:"files/Sit-Stay-Be-Healthy-Campaign.pdf", linkLabel:"Read the full proposal (PDF)",
     posts:[ { type:"doc", caption:"Selected pages from the 26-page campaign proposal", slides:["images/work/cap-1.webp","images/work/cap-2.webp","images/work/cap-3.webp","images/work/cap-4.webp","images/work/cap-5.webp","images/work/cap-6.webp","images/work/cap-7.webp","images/work/cap-8.webp","images/work/cap-9.webp","images/work/cap-10.webp"] } ] },

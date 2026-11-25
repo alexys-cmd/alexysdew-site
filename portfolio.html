@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..600&family=DM+Sans:opsz,wght@9..40,400..600&family=Instrument+Serif:ital@0;1&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/site.css?v=4">
+<link rel="stylesheet" href="css/site.css?v=5">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -130,7 +130,7 @@
   });
 }
 </script>
-<script src="js/projects.js?v=2"></script>
+<script src="js/projects.js?v=3"></script>
 <script>
 {
   const P=window.PROJECTS||[];
@@ -170,7 +170,7 @@
       return `<figure class="mk mk-post">${head(x)}<img class="mk-img" src="${esc(x.image||'')}" alt="">${capt(x)}${credit(x)}</figure>`;
     };
     const rows=ps=>{const reels=ps.filter(x=>x.type==='reel'),feed=ps.filter(x=>x.type!=='reel');return (reels.length?`<div class="mk-row">${reels.map(mock).join('')}</div>`:'')+(feed.length?`<div class="mk-row">${feed.map(mock).join('')}</div>`:'');};
-    const intro=g=>`${g.role?`<p class="pd-role"><strong>My role:</strong> ${esc(g.role)}</p>`:''}${g.note?`<p class="pd-note">${esc(g.note)}</p>`:''}${hl(g)}`;
+    const intro=g=>`${g.role?`<p class="pd-role"><strong>${esc(g.roleLabel||'My role')}:</strong> ${esc(g.role)}</p>`:''}${g.note?`<p class="pd-note">${esc(g.note)}</p>`:''}${hl(g)}`;
     const secs=(p.sections||[]).filter(g=>g.posts&&g.posts.length);
     const work=p.sections?secs.map(g=>(sec=g,`<section class="pd-sec"><p class="pd-sec-label">${esc(g.label||'')}</p><h3>${esc(g.title)}</h3>${intro(g)}${creditLine(g)}<div class="pd-mocks">${rows(g.posts)}</div></section>`)).join(''):`<div class="pd-mocks">${rows(p.posts||[])}</div>`;
     body.innerHTML=`<p class="eyebrow" style="margin-bottom:14px">${esc(p.subtitle)}</p><h2 id="pd-title">${esc(p.title)}</h2><div class="tags-s">${tags(p)}</div>${intro(p)}${p.platforms.length?`<p class="pd-plat">Platforms: ${p.platforms.map(esc).join(', ')}</p>`:''}${creditLine(p)}${work}${p.link?`<a class="btn btn-line" href="${esc(p.link)}" target="_blank" rel="noopener">${esc(p.linkLabel||'See it live')} <svg aria-hidden="true"><use href="#arrow"/></svg></a>`:''}`;
