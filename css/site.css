@@ -485,5 +485,4 @@ time{font-size:13.5px;color:var(--muted);letter-spacing:.02em}
 .pd-sec-link{margin-top:14px}
 
 /* keep header stickers off the words at in-between widths */
-@media (max-width:1120px){.hero:not(:has(#hero-title)) .sticker{display:none}}
 @media (max-width:680px){.hero .sticker{display:none}}
