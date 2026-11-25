@@ -18,7 +18,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..600&family=DM+Sans:opsz,wght@9..40,400..600&family=Instrument+Serif:ital@0;1&family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/site.css?v=10">
+<link rel="stylesheet" href="css/site.css?v=11">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -130,7 +130,7 @@
   });
 }
 </script>
-<script src="js/projects.js?v=8"></script>
+<script src="js/projects.js?v=9"></script>
 <script>
 {
   const P=window.PROJECTS||[];
@@ -153,7 +153,7 @@
     const o=e.target.closest('[data-open]'); if(!o)return;
     const p=P.find(x=>x.id===o.dataset.open); if(!p)return;
     const head=x=>`<div class="mk-head"><span class="mk-av">${esc(x.avatar||'')}</span><span class="mk-nm">${esc(x.brand||'')}</span></div>`;
-    const capt=x=>x.caption?`<p class="mk-cap${x.caption.length>170?' clamp':''}"><b>${esc(x.brand||'')}</b> ${esc(x.caption).replace(/\n/g,'<br>')}</p>${x.caption.length>170?'<button type="button" class="mk-more">more</button>':''}`:'';
+    const capt=x=>x.caption?`<p class="mk-cap${x.caption.length>170?' clamp':''}"><b>${esc(x.brand||'')}</b> ${esc(x.caption).replace(/(^|\s)(#\w+)/g,'$1<span class="mk-tag">$2</span>').replace(/\n/g,'<br>')}</p>${x.caption.length>170?'<button type="button" class="mk-more">more</button>':''}`:'';
     let sec=null;
     const credit=x=>(x.agency??(sec?sec.agency:undefined)??p.agency)?'<p class="credit sm">Created while employed at So Chill Media</p>':'';
     const creditLine=()=>'';

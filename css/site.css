@@ -486,3 +486,4 @@ time{font-size:13.5px;color:var(--muted);letter-spacing:.02em}
 
 /* keep header stickers off the words at in-between widths */
 @media (max-width:680px){.hero .sticker{display:none}}
+.mk-tag{color:#3b5998}
