@@ -76,8 +76,8 @@ h1 em.i{font-size:1.12em;color:var(--navy-2)}
 .note{position:relative;z-index:2;max-width:900px;margin:0 auto;display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:40px;align-items:center}
 .note-card{background:var(--paper);grid-column:1/-1;display:grid;grid-template-columns:minmax(0,280px) minmax(0,1fr);gap:40px;align-items:center}
 .note-card::after,.connect::after{content:"";position:absolute;inset:22px;border:1.5px dashed var(--peri);border-radius:6px;pointer-events:none}
-.hey-pol{width:200px;margin:56px 0 56px 64px;transform:rotate(-4deg);filter:drop-shadow(0 12px 18px rgba(27,47,92,.2))}
-.hey-pol .frame{padding:10px 10px 4px}
+.hey-pol{width:200px;margin:56px 0 56px 64px;filter:drop-shadow(0 12px 18px rgba(27,47,92,.2))}
+.hey-pol .frame{padding:10px 10px 4px;transform:rotate(-4deg)}
 .hey-pol img{aspect-ratio:4/5;object-fit:cover;width:100%;height:auto}
 .hey-pol .cap{display:block;text-align:center;font-family:var(--ital);font-style:italic;font-size:17px;line-height:1.2;color:var(--navy);padding:8px 0 6px}
 .hey-photo .ph{width:100%;height:100%}
@@ -164,8 +164,8 @@ footer{background:var(--navy);color:#C9D3EE;margin-top:-1px}
 .ph-grid .lede{margin-left:0}
 .ph-grid .ctas{justify-content:flex-start}
 .ph-photo{position:relative;display:flex;justify-content:center;padding:20px}
-.pol-lg{width:min(340px,80%);margin:0;transform:rotate(3deg);filter:drop-shadow(0 16px 22px rgba(27,47,92,.22))}
-.pol-lg .frame{padding:12px 12px 4px}
+.pol-lg{width:min(340px,80%);margin:0;filter:drop-shadow(0 16px 22px rgba(27,47,92,.22))}
+.pol-lg .frame{padding:12px 12px 4px;transform:rotate(3deg)}
 .pol-lg img{aspect-ratio:4/5;object-fit:cover;width:100%;height:auto}
 .pol-lg .cap,.cap{display:block;text-align:center;font-family:var(--ital);font-style:italic;font-size:18px;line-height:1.2;color:var(--navy);padding:10px 0 6px}
 .story{padding:48px 56px;text-align:center}
@@ -475,3 +475,5 @@ time{font-size:13.5px;color:var(--muted);letter-spacing:.02em}
   .g-box{flex-direction:column;border-radius:26px;padding:20px}
   .g-list{justify-content:center;flex-wrap:wrap}
 }
+/* exact scallop ring drawn by js/scallop.js (falls back to the repeating pattern above) */
+.scallop.scallop-js::before{background:var(--scallop-img) 0 0/100% 100% no-repeat}
