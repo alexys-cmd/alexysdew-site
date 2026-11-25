@@ -149,9 +149,11 @@
   fb.innerHTML=['All',...CATS].map((c,i)=>`<button type="button" class="chip" aria-pressed="${i===0}">${esc(c)}</button>`).join('');
   fb.addEventListener('click',e=>{const b=e.target.closest('.chip');if(!b)return;fb.querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed',x===b));render(b.textContent==='All'?null:b.textContent);});
   const dlg=document.getElementById('pd'),body=document.getElementById('pd-body');
+  document.addEventListener('click',e=>{const a=e.target.closest('a[href$=".pdf"]');if(!a)return;try{window.goatcounter&&goatcounter.count&&goatcounter.count({path:'pdf/'+a.getAttribute('href').split('/').pop(),title:'Opened PDF: '+a.textContent.trim(),event:true})}catch(_){}});
   document.addEventListener('click',e=>{
     const o=e.target.closest('[data-open]'); if(!o)return;
     const p=P.find(x=>x.id===o.dataset.open); if(!p)return;
+    try{window.goatcounter&&goatcounter.count&&goatcounter.count({path:'project/'+p.id,title:'Opened project: '+p.title,event:true})}catch(_){}
     const head=x=>`<div class="mk-head"><span class="mk-av">${esc(x.avatar||'')}</span><span class="mk-nm">${esc(x.brand||'')}</span></div>`;
     const capt=x=>x.caption?`<p class="mk-cap${x.caption.length>170?' clamp':''}"><b>${esc(x.brand||'')}</b> ${esc(x.caption).replace(/(^|\s)(#\w+)/g,'$1<span class="mk-tag">$2</span>').replace(/\n/g,'<br>')}</p>${x.caption.length>170?'<button type="button" class="mk-more">more</button>':''}`:'';
     let sec=null;
@@ -185,5 +187,6 @@
 }
 </script>
 <script src="js/scallop.js?v=3" defer></script>
+<script data-goatcounter="https://alexysdew.goatcounter.com/count" async src="/js/count.js"></script>
 </body>
 </html>
