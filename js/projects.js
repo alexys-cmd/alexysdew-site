@@ -65,7 +65,7 @@ window.PROJECTS = [
     platforms:["Instagram","TikTok"], images:[], link:"",
     sections:[
       { title:"Florida Panthers", label:"Personal work", agency:false,
-        role:"Original game-day photography, videos, Reels, and sports storytelling that I create for my sports TikTok.",
+        role:"Original game-day TikToks and hockey storytelling that I create for my sports TikTok account.",
         posts:[
           { type:"reel", inline:true, brand:"girlzinhockey13", avatar:"G", caption:"Dear Santa, I have my Christmas list🏒❤️💚\n\n#floridapanthers #christmasshopping #fypシ #hockey #christmaslist @Florida Panthers", poster:"images/work/panthers-christmas-poster.webp", video:"images/work/panthers-christmas.mp4" },
           /* Add your Panthers work here, e.g.
