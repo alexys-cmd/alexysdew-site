@@ -68,7 +68,6 @@ window.PROJECTS = [
         role:"Original game-day photography, videos, Reels, and sports storytelling that I create for my sports TikTok.",
         posts:[
           { type:"reel", inline:true, brand:"girlzinhockey13", avatar:"G", caption:"Dear Santa, I have my Christmas list🏒❤️💚\n\n#floridapanthers #christmasshopping #fypシ #hockey #christmaslist @Florida Panthers", poster:"images/work/panthers-christmas-poster.webp", video:"images/work/panthers-christmas.mp4" },
-          { type:"photo", image:"images/work/panthers-arena.webp", alt:"Panthers Win on the jumbotron at Amerant Bank Arena after a Panthers home game", caption:"Game-day photography · Amerant Bank Arena" },
           /* Add your Panthers work here, e.g.
              { type:"photo", image:"images/work/panthers-1.webp", alt:"...", caption:"..." },
              { type:"reel", brand:"sociallyalexys", avatar:"AD", caption:"...", video:"images/work/panthers-1.mp4", poster:"images/work/panthers-1.webp" } */
