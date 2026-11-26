@@ -60,23 +60,24 @@ window.PROJECTS = [
       { type:"carousel", brand:"codeyandkayla", avatar:"CK", caption:"Anyone can put a home online. Getting it sold for what it’s actually worth is the part that takes work.\n\nThinking about selling in Jupiter, Tequesta, or North Palm Beach? Send us a DM and we’ll walk you through how we’d market yours.", slides:["images/work/ck-1.webp","images/work/ck-2.webp","images/work/ck-3.webp","images/work/ck-4.webp","images/work/ck-5.webp","images/work/ck-6.webp","images/work/ck-7.webp"] },
       { type:"carousel", brand:"oceanside.builders", avatar:"OB", caption:"A finished home is the part everyone sees.\n\nWhat they don’t see is everything it took to get there:\nTrades, materials, inspections, schedules, and plenty of problem solving along the way.\n\nNot everything goes perfectly. That’s part of building. What matters is who takes responsibility when something comes up, communicates it, and keeps the project moving forward.\n\nThat’s what you’re really hiring a builder for.", slides:["images/work/ob-1.webp","images/work/ob-2.webp","images/work/ob-3.webp","images/work/ob-4.webp"] }
     ] },
-  { id:"sports", title:"Sports", subtitle:"Social media, photography, and creative storytelling across basketball and hockey.",
+  { id:"sports", cover:"images/work/sports-cover.webp", title:"Sports", subtitle:"Social media, photography, and creative storytelling across basketball and hockey.",
     categories:["Social Media & Content","Video & Multimedia"], agency:false,
     platforms:["Instagram","TikTok"], images:[], link:"",
     sections:[
+      { title:"Florida Panthers", label:"Personal work", agency:false,
+        role:"Original game-day photography, videos, Reels, and sports storytelling that I create for my sports TikTok.",
+        posts:[
+          { type:"reel", inline:true, brand:"girlzinhockey13", avatar:"G", caption:"Dear Santa, I have my Christmas list🏒❤️💚\n\n#floridapanthers #christmasshopping #fypシ #hockey #christmaslist @Florida Panthers", poster:"images/work/panthers-christmas-poster.webp", video:"images/work/panthers-christmas.mp4" },
+          { type:"photo", image:"images/work/panthers-arena.webp", alt:"Panthers Win on the jumbotron at Amerant Bank Arena after a Panthers home game", caption:"Game-day photography · Amerant Bank Arena" },
+          /* Add your Panthers work here, e.g.
+             { type:"photo", image:"images/work/panthers-1.webp", alt:"...", caption:"..." },
+             { type:"reel", brand:"sociallyalexys", avatar:"AD", caption:"...", video:"images/work/panthers-1.mp4", poster:"images/work/panthers-1.webp" } */
+        ] },
       { title:"Perseverance Basketball", label:"Client work", agency:true,
         role:"Created social media content and promotional copy for youth basketball programs, highlighting player development, training opportunities, and registration campaigns.",
         posts:[
       { type:"carousel", brand:"perseverance_basketball", avatar:"PB", caption:"Coaching, competing and getting better every time out. Our players are putting in the work where it counts — on the court. 🏀\n\nRegister today!", slides:["images/work/pbb-1.webp","images/work/pbb-2.webp","images/work/pbb-3.webp"] },
       { type:"post", brand:"perseverance_basketball", avatar:"PB", caption:"Nothing but hustle and love for the game. ❤️🏀\n\nRegister today!", image:"images/work/pbb-4.webp" }
-        ] },
-      { title:"Florida Panthers", label:"Personal work", agency:false,
-        role:"Original game-day photography, videos, Reels, and sports storytelling that I create for my sports TikTok.",
-        posts:[
-          { type:"reel", brand:"girlzinhockey13", avatar:"G", caption:"Dear Santa, I have my Christmas list🏒❤️💚\n\n#floridapanthers #christmasshopping #fypシ #hockey #christmaslist @Florida Panthers", poster:"images/work/panthers-christmas-poster.webp", video:"images/work/panthers-christmas.mp4" },
-          /* Add your Panthers work here, e.g.
-             { type:"photo", image:"images/work/panthers-1.webp", alt:"...", caption:"..." },
-             { type:"reel", brand:"sociallyalexys", avatar:"AD", caption:"...", video:"images/work/panthers-1.mp4", poster:"images/work/panthers-1.webp" } */
         ] }
     ] },
   { id:"academic", title:"University of Florida Projects", subtitle:"Campaign planning and brand strategy for Animal HealthCare Center",
