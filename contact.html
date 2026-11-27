@@ -133,7 +133,7 @@
 {
   const btn=document.getElementById('copy'),msg=document.getElementById('copied'),email=document.getElementById('email').textContent.trim();
   btn.addEventListener('click',async()=>{
-    try{await navigator.clipboard.writeText(email);msg.textContent='Email copied';}
+    try{await navigator.clipboard.writeText(email);msg.textContent='Email copied!';}
     catch(e){msg.textContent='Copy failed. Email: '+email;}
     setTimeout(()=>msg.textContent='',2500);
   });
